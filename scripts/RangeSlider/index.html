@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <title>Range Slider</title>
+  <link rel="stylesheet" href="">
+  <script type="text/javascript" src="rangeSlider.js"></script>
+  <style>
+    .slider {
+      max-width: 300px;
+      margin: 200px auto;
+    }
+    .range {
+      position: relative;
+      height: 5px;
+      background-color: #3678ff;
+    }
+    .thumb-max,
+    .thumb-min {
+      position: absolute;
+      width: 30px;
+      height: 30px;
+      border-radius: 50%;
+      background-color: #9d9d9d;
+      top: -12px;
+    }
+    .thumb-min {
+      left: 50px;
+    }
+    .thumb-max {
+      left: 100px;
+    }
+  </style>
+</head>
+<body>
+  <div class="slider">
+    <div class="range">
+      <div class="thumb-min"></div>
+      <div class="thumb-max"></div>
+    </div>
+  </div>
+</body>
+</html>
