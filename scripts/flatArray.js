@@ -1,19 +1,24 @@
 const arr = [1, 2, [3, 2, [3, 5], 10], 20];
 // [1, 2, 3, 2, 3, 5, 10, 20]
 
-const newArr = [];
-const deepFlatten1 = (arr) => {
-  arr.forEach(item => {
-    if (Array.isArray(item)) {
-      deepFlatten1(item);
-    } else {
-      newArr.push(item);
-    }
-  });
+// closures
+const deepFlatten1 = () => {
+  const newArr = [];
+  const a = (arr) => {
+    arr.forEach(item => {
+      if (Array.isArray(item)) {
+        a(item);
+      } else {
+        newArr.push(item);
+      }
+    });
+    return newArr;
+  };
+  return a;
 };
-deepFlatten1(arr);
 
-//console.log(newArr);
+
+console.log(deepFlatten1()(arr));
 
 // es6
 function deepFlatten2(arr) {
