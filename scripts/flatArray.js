@@ -17,7 +17,6 @@ const deepFlatten1 = () => {
   return a;
 };
 
-
 console.log(deepFlatten1()(arr));
 
 // es6
