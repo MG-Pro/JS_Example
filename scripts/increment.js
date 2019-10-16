@@ -3,7 +3,6 @@ class Increment {
         this.i = i;
     }
     toString() {
-        console.log('toString');
         return ++this.i;
     }
 }
@@ -14,5 +13,3 @@ alert(increment); // 1
 alert(increment); // 2
 
 alert(increment + increment); // 7
-
-
