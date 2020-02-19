@@ -46,3 +46,7 @@ const b = Object.create(a)
 _.has(a, 'a')
 
 console.log(b);
+
+const arr = [455, 66, 5]
+
+console.log(Math.min(...arr));
